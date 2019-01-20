@@ -1,0 +1,5 @@
+### Notes
+Ideology modding: Localization: Parties, countries 
+Common: Ideologies
+History: individual countries, change starting parties and leader
+GFX: Flags

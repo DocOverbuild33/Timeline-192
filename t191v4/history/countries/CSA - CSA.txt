@@ -135,20 +135,24 @@ set_convoys = 400
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 17
+		right-wing_democratic = { 
+			popularity = 20
+		}
+
+		left-wing_democratic = {
+			popularity = 5
 		}
 
 		fascism = {
-			popularity = 65
+			popularity = 50
 		}
 		
 		communism = {
-			popularity = 5
+			popularity = 10
 		}
 		
-		neutrality = {
-			popularity = 13
+		authoritarianism = {
+			popularity = 15
 		}		
 	}
 	

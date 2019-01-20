@@ -62,8 +62,12 @@ create_import = {
 set_politics = {
 
 	parties = {
-		democratic = {
-			popularity = 10
+		right-wing_democratic = {
+			popularity = 15
+		}
+		
+		left-wing_democratic = {
+			popularity = 40
 		}
 
 		fascism = {
@@ -71,15 +75,15 @@ set_politics = {
 		}
 
 		communism = {
-			popularity = 15
+			popularity = 10
 		}
 
-		neutrality = {
-			popularity = 70
+		authoritarianism = {
+			popularity = 30
 		}
 	}
 
-	ruling_party = neutrality
+	ruling_party = authoritarianism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
