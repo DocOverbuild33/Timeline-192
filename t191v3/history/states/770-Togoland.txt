@@ -1,0 +1,21 @@
+state={
+	id=770
+	name="STATE_770"
+	
+	state_category = rural
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		10919 1951 12843 12874 12762 12785
+	}
+	manpower=963600
+	buildings_max_level_factor=1.000
+}

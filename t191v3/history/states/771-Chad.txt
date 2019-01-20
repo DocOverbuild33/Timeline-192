@@ -1,0 +1,21 @@
+state={
+	id=771
+	name="STATE_771"
+	
+	state_category = rural
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		3123 2081 4897 4978 1473 9152 1883 3181 7919
+	}
+	manpower=363600
+	buildings_max_level_factor=1.000
+}

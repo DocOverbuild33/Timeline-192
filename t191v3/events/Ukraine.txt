@@ -1,0 +1,57 @@
+﻿add_namespace = ukraine
+
+country_event = {
+	id = ukraine.1
+	title = ukraine.1.t
+	desc = ukraine.1.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+
+	#civil war starts
+	option = { # Support Nationalists
+		name = ukraine.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 176
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.5
+				capital = 226
+				states = { 192 201 226 259 221 228 193 225 }
+
+			}
+			random_other_country = {
+				set_capital = 226
+				load_oob = "UKR_Rebels"
+				set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				ruling_party = fascism
+				ideology = fascism
+
+				add_popularity = {
+					ideology = fascism
+					popularity = 1
+				}
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+
+			load_oob = "UKR_Junta"
+			set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+
+			add_popularity = {
+				ideology = neutrality
+				popularity = 1
+			}
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+
+}

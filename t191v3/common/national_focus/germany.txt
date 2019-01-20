@@ -1,0 +1,1350 @@
+############# Mod One
+
+focus_tree = {
+id = german_focus
+country = {
+factor = 0
+modifier = {
+add = 10
+tag = GER
+}
+}
+#Focus for American Barrel Designs
+focus = {
+id = GER_americanbarreldesigns
+icon = GFX_goal_continuous_armor_production
+x = 52
+y = 11
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_subsidizethecivilianeconomy focus = GER_givemilitarygrants }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Clean Out the Government
+focus = {
+id = GER_cleanoutthegovernment
+icon = GFX_goal_generic_intelligence_exchange
+x = 52
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_unburdenthekaiser }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Ban Fringe Parties
+focus = {
+id = GER_banfringeparties
+icon = GFX_goal_generic_forceful_treaty
+x = 46
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_unburdenthekaiser }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for The Einstein Project
+focus = {
+id = GER_theeinsteinproject
+icon = GFX_focus_wonderweapons
+x = 54
+y = 12
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_americanbarreldesigns focus = GER_automaticrifledevelopment }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Give Military Grants
+focus = {
+id = GER_givemilitarygrants
+icon = GFX_goal_generic_construct_mil_factory
+x = 56
+y = 10
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_abalancedeffort }
+mutually_exclusive = { focus = GER_subsidizethecivilianeconomy }
+mutually_exclusive = { focus = GER_subsidizethecivilianeconomy }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Continue the Kulturkampf
+focus = {
+id = GER_continuethekulturkampf
+icon = GFX_focus_generic_support_the_left_right
+x = 47
+y = 7
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_banfringeparties }
+prerequisite = { focus = GER_anewnationalidentity }
+mutually_exclusive = { focus = GER_equalopportunitiesforall }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Unburden the Kaiser
+focus = {
+id = GER_unburdenthekaiser
+icon = GFX_goal_generic_political_pressure
+x = 49
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_continueroyalrule }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for No Land Shall Be Returned!
+focus = {
+id = GER_nolandshallbereturned
+icon = GFX_focus_ger_oppose_hitler
+x = 49
+y = 8
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_continuethekulturkampf focus = GER_equalopportunitiesforall }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Equal Opportunities for All
+focus = {
+id = GER_equalopportunitiesforall
+icon = GFX_goal_generic_improve_relations
+x = 51
+y = 7
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_cleanoutthegovernment }
+prerequisite = { focus = GER_anewnationalidentity }
+mutually_exclusive = { focus = GER_continuethekulturkampf }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Subsidize the Civilian Economy
+focus = {
+id = GER_subsidizethecivilianeconomy
+icon = GFX_goal_generic_construct_civ_factory
+x = 52
+y = 10
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_abalancedeffort }
+mutually_exclusive = { focus = GER_givemilitarygrants }
+mutually_exclusive = { focus = GER_givemilitarygrants }
+mutually_exclusive = { focus = GER_givemilitarygrants }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for A Balanced Effort
+focus = {
+id = GER_abalancedeffort
+icon = GFX_goal_molotov_ribbentrop_pact
+x = 54
+y = 9
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_nolandshallbereturned }
+mutually_exclusive = { focus = GER_balloontherdbudget }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for A New National Identity
+focus = {
+id = GER_anewnationalidentity
+icon = GFX_focus_generic_strike_at_democracy1
+x = 49
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_unburdenthekaiser }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Automatic Rifle Development
+focus = {
+id = GER_automaticrifledevelopment
+icon = GFX_goal_generic_small_arms
+x = 56
+y = 11
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = GER_subsidizethecivilianeconomy focus = GER_givemilitarygrants }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+#Focus for Reach Out to the Reds
+focus = {
+id = Germany_reachouttothereds
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 19
+y = 9
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_theunsinkableaircraftcarrier }
+ai_will_do = {
+ factor = 1
+ }
+
+  completion_reward = {
+      diplomatic_relation = {
+          country = GEO
+          relation = guarantee
+      }
+      add_opinion_modifier = {
+        target = GEO
+        modifier = MR_pact
+      }
+
+      GEO = {
+        target = GER
+        modifier = MR_pact
+      }
+
+  }
+
+ }
+
+#Focus for The Unsinkable Aircraft Carrier
+focus = {
+id = Germany_theunsinkableaircraftcarrier
+icon = GFX_focus_generic_coastal_fort
+x = 19
+y = 8
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_encouragegermansettlers }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+ GER = { transfer_state = 196 }
+ 196 = { add_core_of = GER }
+ GER = { transfer_state = 200 }
+ 200 = { add_core_of = GER }
+ GER = { transfer_state = 137 }
+ 137 = { add_core_of = GER }
+ }
+
+ }
+
+#Focus for
+focus = {
+id = Germany_encouragegermansettlers
+icon = GFX_focus_CZE_german_puppet
+x = 20
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_continuetheoccupation }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+
+#Focus for Economic Unity
+focus = {
+id = Germany_economicunity
+icon = GFX_goal_tripartite_pact
+x = 10
+y = 1
+cost = 10
+available_if_capitulated = yes
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+  add_political_power = 150
+ }
+
+ }
+
+
+#Focus for Timeline to Independence
+focus = {
+id = Germany_timelinetoindependence
+icon = GFX_focus_generic_diplomatic_treaty
+x = 25
+y = 7
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_limitedselfrule }
+prerequisite = { focus = Germany_handoverproduction }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Hand Over Production
+focus = {
+id = Germany_handoverproduction
+icon = GFX_goal_continuous_air_production
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_changeinstrategy }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Limited Self Rule
+focus = {
+id = Germany_limitedselfrule
+icon = GFX_focus_generic_military_academy
+x = 24
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_changeinstrategy }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+
+#Focus for Mitteleuropa United
+focus = {
+id = Germany_mitteleuropaunited
+icon = GFX_focus_ger_revive_kaiserreich
+x = 10
+y = 7
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_thehapsburgroute}
+prerequisite = { focus = Germany_builduptheguard }
+prerequisite = { focus = Germany_constructthewestwall }
+prerequisite = { focus = Germany_eastwardfortifications}
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Reopen Arms Factories
+focus = {
+id = Germany_reopenarmsfactories
+icon = GFX_goal_generic_construct_mil_factory
+x = 7
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_rhinelandindustry }
+ai_will_do = {
+ factor = 1
+ }
+
+
+
+ }
+
+#Focus for Rhineland Industry
+focus = {
+id = Germany_rhinelandindustry
+icon = GFX_goal_generic_consumer_goods
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_revitalizethehomefront }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Unleash the Flemish Lion
+focus = {
+id = Germany_unleashtheflemishlion
+icon = GFX_goal_generic_construct_civilian
+x = 5
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_rhinelandindustry }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Revive the Hindenburg Line
+focus = {
+id = Germany_revivethehindenburgline
+icon = GFX_goal_generic_build_tank
+x = 3
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_unleashtheflemishlion }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Flemish Development
+focus = {
+id = Germany_flemishdevelopment
+icon = GFX_goal_generic_construct_civ_factory
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_unleashtheflemishlion }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Construct the Westwall
+focus = {
+id = Germany_constructthewestwall
+icon = GFX_goal_generic_military_sphere
+x = 7
+y = 6
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_reopenarmsfactories }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Build Up the Guard
+focus = {
+id = Germany_builduptheguard
+icon = GFX_goal_generic_build_tank
+x = 14
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_expandthekielcemines }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Eastward Fortifications
+focus = {
+id = Germany_eastwardfortifications
+icon = GFX_goal_generic_fortify_city
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_bufferstateproposal }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Buffer State Proposal
+focus = {
+id = Germany_bufferstateproposal
+icon = GFX_goal_generic_national_unity
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_thenorthernflank }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Change in Strategy
+focus = {
+id = Germany_changeinstrategy
+icon = GFX_goal_generic_alliance
+x = 25
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_clampdownonresistence }
+prerequisite = { focus = GER_willofthepeople}
+mutually_exclusive = { focus = Germany_continuetheoccupation }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for The Polish Situation
+focus = {
+id = Germany_thepolishsituation
+icon = GFX_focus_generic_polish_deal
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_integratetheeast }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for The Northern Flank
+focus = {
+id = Germany_thenorthernflank
+icon = GFX_focus_ger_great_red_menace
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_integratetheeast }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Expand the Kielce Mines
+focus = {
+id = Germany_expandthekielcemines
+icon = GFX_focus_generic_steel
+x = 14
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_thepolishsituation }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Revitalize the Homefront
+focus = {
+id = Germany_revitalizethehomefront
+icon = GFX_goal_generic_positive_trade_relations
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_economicunity }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+ remove_idea = GER_aftershock_of_1929_1
+ add_idea = GER_aftershock_of_1929_2
+ add_idea = partial_economic_mobilisation
+ }
+
+ }
+
+#Focus for Das Autobahnprojekt
+focus = {
+id = Germany_dasautobahnprojekt
+icon = GFX_goal_generic_construct_infrastructure
+x = 10
+y = 2
+cost = 5
+available_if_capitulated = yes
+prerequisite = { focus = Germany_economicunity }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward =  {
+ unlock_decision_category_tooltip = GER_Autobahn_Construction
+ }
+
+ }
+
+#Focus for Continue the Occupation
+focus = {
+id = Germany_continuetheoccupation
+icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+x = 20
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_clampdownonresistence }
+mutually_exclusive = { focus = Germany_changeinstrategy }
+
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+
+ divisions_in_state = {
+   state = 202
+   size > 4
+ }
+
+ divisions_in_state = {
+   state = 226
+   size > 3
+ }
+
+ divisions_in_state = {
+   state = 137
+   size > 3
+ }
+
+
+ divisions_in_state = {
+    state = 200
+    size > 1
+ }
+
+ divisions_in_state = {
+    state = 92
+    size > 1
+   }
+
+   divisions_in_state = {
+      state = 228
+      size > 0
+   }
+
+   divisions_in_state = {
+      state = 227
+      size > 0
+     }
+
+ }
+
+ completion_reward = {
+
+ add_political_power = 100
+
+ remove_ideas = GER_Ukranian_separatists
+
+ hidden_effect = {
+
+ add_ideas = GER_Ukranian_Revolution
+  }
+ }
+
+ }
+
+#Focus for Clamp Down on Resistence
+focus = {
+id = Germany_clampdownonresistence
+icon = GFX_goal_continuous_suppression
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_increasetheukraniangarrison }
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+
+ divisions_in_state = {
+   state = 202
+   size > 3
+ }
+
+ divisions_in_state = {
+   state = 226
+   size > 1
+ }
+
+ divisions_in_state = {
+   state = 137
+   size > 1
+ }
+
+
+ divisions_in_state = {
+    state = 200
+    size > 0
+ }
+
+ divisions_in_state = {
+    state = 92
+    size > 0
+   }
+
+ }
+
+ completion_reward = {
+    add_political_power = -75
+ }
+
+ }
+
+#Focus for The Hapsburg Route
+focus = {
+id = Germany_thehapsburgroute
+icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_connectthecities }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+  add_political_power = 75
+ }
+
+ }
+
+#Focus for Increase the Ukranian Garrison
+focus = {
+id = Germany_increasetheukraniangarrison
+icon = GFX_focus_generic_little_entente
+x = 22
+y = 3
+
+cost = 10
+
+available_if_capitulated = yes
+
+prerequisite = { focus = Germany_integratetheeast }
+
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+
+ divisions_in_state = {
+   state = 202
+   size > 2
+ }
+
+ divisions_in_state = {
+   state = 226
+   size > 1
+ }
+
+ divisions_in_state = {
+   state = 137
+   size > 1
+ }
+
+ }
+
+ completion_reward = {
+    add_political_power = -50
+ }
+
+ }
+
+#Focus for The Brandenburg Loop
+focus = {
+id = Germany_thebrandenburgloop
+icon = GFX_goal_generic_production2
+x = 10
+y = 3
+cost = 6
+available_if_capitulated = yes
+prerequisite = { focus = Germany_dasautobahnprojekt }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+  add_political_power = 25
+ }
+
+ }
+
+#Focus for Connect the Cities
+focus = {
+id = Germany_connectthecities
+icon = GFX_focus_generic_rubber
+x = 10
+y = 4
+cost = 7
+available_if_capitulated = yes
+prerequisite = { focus = Germany_thebrandenburgloop }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward = {
+  add_political_power = 50
+ }
+
+ }
+
+#Focus for Integrate the East
+focus = {
+id = Germany_integratetheeast
+icon = GFX_focus_generic_self_management
+x = 16
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = Germany_economicunity }
+ai_will_do = {
+ factor = 1
+ }
+
+ completion_reward {
+ add_political_power = 150
+ }
+
+ }
+
+ #Focus for Heavy Barrel  Development
+ focus = {
+ id = GER_heavybarreldevelopment
+ icon = GFX_focus_NZL_bob_semple_tank
+ x = 41
+ y = 10
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_balloontherdbudget }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+  #Focus for Balloon the R&D Budget
+  focus = {
+  id = GER_balloontherdbudget
+  icon = GFX_focus_research2
+  x = 43
+  y = 9
+  cost = 10
+  available_if_capitulated = yes
+  prerequisite = { focus = GER_nolandshallbereturned focus = GER_fullymilitarizesociety }
+  mutually_exclusive = { focus = GER_abalancedeffort }
+  ai_will_do = {
+   factor = 1
+   }
+
+   }
+
+   #Focus for Gustav & Dora
+   focus = {
+   id = GER_gustavdora
+   icon = GFX_goal_generic_army_artillery2
+   x = 43
+   y = 10
+   cost = 10
+   available_if_capitulated = yes
+   prerequisite = { focus = GER_balloontherdbudget }
+   ai_will_do = {
+    factor = 1
+    }
+
+    }
+
+ #Focus for Gott Erhalte den Kaiser!
+ focus = {
+ id = GER_gotterhaltedenkaiser
+ icon = GFX_focus_ger_return_of_the_kaiser
+ x = 34
+ y = 1
+ cost = 10
+ available_if_capitulated = yes
+ ai_will_do = {
+  factor = 1
+  }
+  completion_reward = {
+  add_political_power = 150
+    }
+
+  }
+
+
+ #Focus for Reduce the Kaiser's Power
+ focus = {
+ id = GER_reducethekaiserspower
+ icon = GFX_focus_rom_handle_king
+ x = 32
+ y = 4
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_willofthepeople }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for End Prussian Supremecy
+ focus = {
+ id = GER_endprussiansupremecy
+ icon = GFX_focus_generic_anti_fascist_diplomacy
+ x = 30
+ y = 5
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_morepowertothereichstag }
+ prerequisite = { focus = GER_reducethekaiserspower }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Arsenal of Freedom
+ focus = {
+ id = GER_arsenaloffreedom
+ icon = GFX_focus_generic_the_giant_wakes
+ x = 28
+ y = 7
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_birthofanation }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Clip the Eagle's Wings
+ focus = {
+ id = GER_cliptheeagleswings
+ icon = GFX_focus_generic_strike_at_democracy3
+ x = 36
+ y = 10
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_crushtheentente focus = GER_slashthecommonwealth }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Crush the Entente
+ focus = {
+ id = GER_crushtheentente
+ icon = GFX_focus_ger_strike_at_the_source
+ x = 37
+ y = 9
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_crushthenords }
+ prerequisite = { focus = GER_nomorepacifits }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Slash the Commonwealth
+ focus = {
+ id = GER_slashthecommonwealth
+ icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+ x = 35
+ y = 9
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_africanborderwars }
+ prerequisite = { focus = GER_nomorepacifits }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Crush the Nords
+ focus = {
+ id = GER_crushthenords
+ icon = GFX_goal_continuous_boost_freedom
+ x = 38
+ y = 8
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_derewigekrieg }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+  #Focus for Unleash the Military-Industrial Complex
+  focus = {
+  id = GER_unleashthemilitaryindustrialcomplex
+  icon = GFX_goal_generic_air_production
+  x = 43
+  y = 11
+  cost = 10
+  available_if_capitulated = yes
+  prerequisite = { focus = GER_heavybarreldevelopment focus = GER_gustavdora focus = GER_jetbomberproject }
+  ai_will_do = {
+   factor = 1
+   }
+
+   }
+
+ #Focus for No More Pacifits!
+ focus = {
+ id = GER_nomorepacifits
+ icon = GFX_focus_generic_italy_first
+ x = 36
+ y = 8
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_derewigekrieg }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for African Border Wars
+ focus = {
+ id = GER_africanborderwars
+ icon = GFX_focus_generic_provoke_border_clashes
+ x = 34
+ y = 8
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_derewigekrieg }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Der Ewige Krieg
+ focus = {
+ id = GER_derewigekrieg
+ icon = GFX_goal_generic_attack_allies
+ x = 36
+ y = 7
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_fullymilitarizesociety }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Trans-Atlantic Cooperation
+ focus = {
+ id = GER_transatlanticcooperation
+ icon = GFX_focus_chi_mission_to_the_us
+ x = 30
+ y = 7
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_birthofanation }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for A Mere Figurehead
+ focus = {
+ id = GER_amerefigurehead
+ icon = GFX_goal_generic_secret_weapon
+ x = 40
+ y = 5
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_themilitaryknowsbest }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Continue Royal Rule
+ focus = {
+ id = GER_continueroyalrule
+ icon = GFX_focus_ger_revive_kaiserreich
+ x = 49
+ y = 4
+ cost = 10
+ available_if_capitulated = yes
+ mutually_exclusive = { focus = GER_themilitaryknowsbest }
+ prerequisite = { focus = GER_maintainthestatusquo}
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for The Military Knows Best
+ focus = {
+ id = GER_themilitaryknowsbest
+ icon = GFX_focus_ger_reichskommisariats
+ x = 38
+ y = 4
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_maintainthestatusquo }
+ mutually_exclusive = { focus = GER_continueroyalrule }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Dissolve the Reichstag
+ focus = {
+ id = GER_dissolvethereichstag
+ icon = GFX_goal_generic_forceful_treaty
+ x = 36
+ y = 5
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_themilitaryknowsbest }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Fully Militarize Society
+ focus = {
+ id = GER_fullymilitarizesociety
+ icon = GFX_focus_generic_license_production
+ x = 38
+ y = 6
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_dissolvethereichstag }
+ prerequisite = { focus = GER_amerefigurehead }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Private Sector Reforms
+ focus = {
+ id = GER_privatesectorreforms
+ icon = GFX_focus_rom_parties_end
+ x = 32
+ y = 2
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_gotterhaltedenkaiser }
+ ai_will_do = {
+  factor = 1
+  }
+
+  completion_reward = {
+
+  }
+
+  }
+
+ #Focus for Birth of a Nation
+ focus = {
+ id = GER_birthofanation
+ icon = GFX_focus_generic_support_the_left_right
+ x = 30
+ y = 6
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_endprussiansupremecy }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+  #Focus for Jet Bomber Project
+  focus = {
+  id = GER_jetbomberproject
+  icon = GFX_focus_CZE_military_aeronautical_institute
+  x = 45
+  y = 10
+  cost = 10
+  available_if_capitulated = yes
+  prerequisite = { focus = GER_balloontherdbudget }
+  ai_will_do = {
+   factor = 1
+   }
+
+   }
+
+ #Focus for Guide the Puppets
+ focus = {
+ id = GER_guidethepuppets
+ icon = GFX_goal_generic_propaganda
+ x = 32
+ y = 7
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_birthofanation }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for More Power to the Reichstag
+ focus = {
+ id = GER_morepowertothereichstag
+ icon = GFX_focus_generic_treaty
+ x = 29
+ y = 4
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_willofthepeople }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Purge the Corrupt
+ focus = {
+ id = GER_purgethecorrupt
+ icon = GFX_focus_generic_support_the_left_right
+ x = 36.5
+ y = 2
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_gotterhaltedenkaiser }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Will of the People
+ focus = {
+ id = GER_willofthepeople
+ icon = GFX_goal_support_democracy
+ x = 33
+ y = 3
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_privatesectorreforms }
+ prerequisite = { focus = GER_trimdownthefat }
+ mutually_exclusive = { focus = GER_maintainthestatusquo }
+ mutually_exclusive = { focus = GER_maintainthestatusquo }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Maintain the Status Quo
+ focus = {
+ id = GER_maintainthestatusquo
+ icon = GFX_focus_ger_oppose_hitler
+ x = 36
+ y = 3
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_purgethecorrupt }
+ prerequisite = { focus = GER_trimdownthefat }
+ mutually_exclusive = { focus = GER_willofthepeople }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Trim Down the Fat
+ focus = {
+ id = GER_trimdownthefat
+ icon = GFX_focus_RAJ_indian_gurkhas
+ x = 34
+ y = 2
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_gotterhaltedenkaiser }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for African Self-Determination
+ focus = {
+ id = GER_africanselfdetermination
+ icon = GFX_goal_tfv_saf_secure_interests_in_africa
+ x = 31
+ y = 8
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_transatlanticcooperation }
+ prerequisite = { focus = GER_guidethepuppets }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+ #Focus for Liberate the French
+ focus = {
+ id = GER_liberatethefrench
+ icon = GFX_focus_chi_reach_out_to_france
+ x = 29
+ y = 8
+ cost = 10
+ available_if_capitulated = yes
+ prerequisite = { focus = GER_arsenaloffreedom }
+ prerequisite = { focus = GER_transatlanticcooperation }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+
+#End of focuses
+ }

@@ -1,0 +1,26 @@
+state={
+	id=769
+	
+	state_category = rural
+	
+	name="STATE_769"
+	resources={
+		chromium=35 # was: 64.000
+		tungsten=8 # was: 16.000
+	}
+
+	history={
+		owner = ZIM
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ZIM
+	}
+
+	provinces={
+		7872 10538 697 12677 5199 12504 5221 10930 10594 1846 12986 12908 2255 13173
+	}
+	manpower=2155400
+	buildings_max_level_factor=1.000
+}
