@@ -223,8 +223,12 @@ create_country_leader = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 50
+		right-wing_democratic = { 
+			popularity = 25
+		}
+		
+		left-wing_democratic = {
+			popularity = 5
 		}
 
 		fascism = {
@@ -232,15 +236,15 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 10
+			popularity = 5
 		}
 		
-		neutrality = { 
-			popularity = 10
+		authoritarianism = { 
+			popularity = 35
 		}		
 	}
 	
-	ruling_party = democratic
+	ruling_party = authoritarianism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
@@ -267,7 +271,7 @@ create_country_leader = {
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
 	picture = "Portrait_Britain_Winston_Churchill.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = monarchism
 	traits = {
 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}
