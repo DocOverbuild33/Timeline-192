@@ -1,24 +1,71 @@
 ideas = {
 
 	country = {
-		great_depression = {
-			
-			
+		USA_great_depression = {
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = democratic
+				OR = {
+					has_government = left-wing_democratic
+					has_government = right-wing_communist
+				}
 			}
+
 
 			removal_cost = -1
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.3
-				conscription_factor = -0.5
-				join_faction_tension = 0.20
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+		USA_defunded_military = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.75
+				naval_doctrine = -0.75
+				air_doctrine = -0.75
+				armor = -0.75
+				air_techs = -0.50
+				naval = -0.30
+			
+			modifier = {
+				minimum_training_level = 0.1
+				army_org_factor	= -0.5
+				army_morale_factor = -0.5
+				defence = -0.2
+				offence = -0.2
+			}
+		}
+		
+		USA_labor_disputes = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
 			}
 		}
 
@@ -250,23 +297,6 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-			}
-		}
-
-		liberty_ships_focus = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				amphibious_invasion = 0.10
 			}
 		}
 

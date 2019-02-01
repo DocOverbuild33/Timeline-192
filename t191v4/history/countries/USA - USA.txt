@@ -175,6 +175,11 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	USA_great_depression
+	USA_defunded_military
+	USA_labor_disputes
+}
 
 
 create_country_leader = {
