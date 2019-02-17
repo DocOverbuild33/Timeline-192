@@ -9,7 +9,7 @@ ideas = {
 			allowed_civil_war = {
 				OR = {
 					has_government = left-wing_democratic
-					has_government = right-wing_communist
+					has_government = right-wing_democratic
 				}
 			}
 
@@ -39,8 +39,11 @@ ideas = {
 				naval_doctrine = -0.75
 				air_doctrine = -0.75
 				armor = -0.75
-				air_techs = -0.50
-				naval = -0.30
+				light_air = -0.75
+				medium_air = -0.75
+				heavy_air = -0.75
+				naval_equipment = -0.30
+			}
 			
 			modifier = {
 				minimum_training_level = 0.1

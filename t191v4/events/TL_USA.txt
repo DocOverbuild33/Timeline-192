@@ -1,0 +1,50 @@
+add_namespace = tlusa
+
+##Event: Election of 1936
+country_event = {
+ id = tlusa.1
+ title = tlusa.1.title
+ desc = tlusa.1.desc
+ picture = GFX_report_event_usa_election_generic
+ 
+ fire_only_once = yes
+ 
+ major = yes
+ trigger = {
+	tag = USA
+	date > 1936.11.1
+	date < 1936.11.30
+	}	
+	
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = tlusa.1.a
+		ai_chance = { factor = 75}
+		
+		set_politics = {
+			ruling_party = left-wing_democratic
+			election_frequency = 48
+			elections_allowed = yes
+		}
+
+		add_political_power = 50
+
+		add_popularity= { 
+			ideology = left-wing_democratic 
+			popularity = 0.2
+		}
+	}
+	option = {
+		name = tlusa.1.b
+		ai_chance = { factor = 25}
+		
+		hold_election = yes
+
+		add_popularity= { 
+			ideology = right-wing_democratic 
+			popularity = 0.1
+		}
+	}
+}
+
