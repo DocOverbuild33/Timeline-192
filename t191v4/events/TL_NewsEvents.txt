@@ -1,0 +1,25 @@
+add_namespace = tlnews
+
+news_event = {
+	id = tlnews.1
+	title = tlnews.1.t
+	desc = tlnews.1.d
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tlnews.1.a
+		trigger = {
+			NOT = {
+				TAG = CSA
+			}
+		}
+	}
+	option = {
+		name = tlnews.1.b
+		trigger = { TAG = CSA }
+	}
+}

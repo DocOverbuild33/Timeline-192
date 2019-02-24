@@ -176,7 +176,7 @@ set_politics = {
 }
 
 add_ideas = {
-	USA_great_depression
+	USA_great_depression1
 	USA_defunded_military
 	USA_labor_disputes
 }

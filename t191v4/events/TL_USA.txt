@@ -45,6 +45,34 @@ country_event = {
 			ideology = right-wing_democratic 
 			popularity = 0.1
 		}
+			
+		add_ideas = USA_increasing_discontent
+	}
+}
+
+country_event = {
+ id = tlusa.2
+ title = tlusa.2.title
+ desc = tlusa.2.desc
+ picture = GFX_report_event_dead_soldiers
+ 
+ is_triggered_only = yes
+
+	option = {
+		name = tlusa.2.a
+		ai_chance = { factor = 90}
+		
+		add_ideas = USA_total_war
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = tlnews.1 }
+		}
+	}
+	option = {
+		name = tlusa.2.b
+		ai_chance = { factor = 25}
+		
+		add_stability = -0.05
 	}
 }
 
