@@ -2,8 +2,8 @@ add_namespace = tlnews
 
 news_event = {
 	id = tlnews.1
-	title = tlnews.1.t
-	desc = tlnews.1.d
+	title = tlnews.1.title
+	desc = tlnews.1.desc
 	picture = GFX_news_event_053
 	
 	major = yes

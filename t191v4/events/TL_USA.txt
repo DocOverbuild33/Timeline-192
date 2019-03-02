@@ -64,6 +64,8 @@ country_event = {
 		
 		add_ideas = USA_total_war
 		
+		add_war_support = 0.10
+		
 		hidden_effect = {
 			news_event = { hours = 1 id = tlnews.1 }
 		}

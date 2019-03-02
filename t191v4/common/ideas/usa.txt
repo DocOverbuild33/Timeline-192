@@ -29,7 +29,7 @@ ideas = {
 		}
 		
 		USA_defunded_military = {
-		picture = idea_generic_army_problems
+			picture = generic_army_problems
 			allowed = {
 				always = no
 			}
@@ -61,7 +61,7 @@ ideas = {
 		}
 		
 		USA_labor_disputes = {
-			picture = fra_factory_strikes
+			picture = FRA_factory_strikes
 			allowed = {
 				always = no
 			}
@@ -109,9 +109,10 @@ ideas = {
 			
 			removal_cost = -1
 			
-			modifer = {
-				conscription = 0.005
+			modifier = {
+				conscription = 0.01
 				industry_repair_factor = 0.5
+				army_core_defence_factor = 0.2
 			}
 		}
 
