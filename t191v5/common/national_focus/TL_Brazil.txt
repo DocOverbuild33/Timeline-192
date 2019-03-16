@@ -1,0 +1,14 @@
+focus_tree = { 
+	id = BRA
+	
+	country = { 
+		factor = 0
+		
+		modifier = { 
+			add = 10 
+			tag = BRA
+		} 
+	} 
+	
+	default = no
+}

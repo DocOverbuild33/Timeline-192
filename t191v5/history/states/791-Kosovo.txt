@@ -1,0 +1,21 @@
+
+state={
+	id=791
+	name="STATE_791"
+	manpower = 195500
+	
+	state_category = rural
+	
+	history={
+		owner = ALB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = ALB
+	}
+
+	provinces={
+		6940 9849 9874 9890
+	}
+}

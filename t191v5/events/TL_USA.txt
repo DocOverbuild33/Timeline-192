@@ -1,0 +1,107 @@
+add_namespace = tlusa
+
+##Event: Election of 1936
+country_event = {
+ id = tlusa.1
+ title = tlusa.1.title
+ desc = tlusa.1.desc
+ picture = GFX_report_event_usa_election_generic
+ 
+ fire_only_once = yes
+ 
+ major = yes
+ trigger = {
+	tag = USA
+	date > 1936.11.1
+	date < 1936.11.30
+	}	
+	
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = tlusa.1.a
+		ai_chance = { factor = 75}
+		
+		set_politics = {
+			ruling_party = left-wing_democratic
+			election_frequency = 48
+			elections_allowed = yes
+		}
+
+		add_political_power = 50
+
+		add_popularity= { 
+			ideology = left-wing_democratic 
+			popularity = 0.2
+		}
+	}
+	option = {
+		name = tlusa.1.b
+		ai_chance = { factor = 25}
+		
+		hold_election = yes
+
+		add_popularity= { 
+			ideology = right-wing_democratic 
+			popularity = 0.1
+		}
+			
+		add_ideas = USA_increasing_discontent
+	}
+}
+
+country_event = {
+ id = tlusa.2
+ title = tlusa.2.title
+ desc = tlusa.2.desc
+ picture = GFX_report_event_dead_soldiers
+ 
+ is_triggered_only = yes
+
+	option = {
+		name = tlusa.2.a
+		ai_chance = { factor = 90}
+		
+		add_ideas = USA_total_war
+		
+		add_war_support = 0.10
+		
+		hidden_effect = {
+			news_event = { hours = 1 id = tlnews.1 }
+		}
+	}
+	option = {
+		name = tlusa.2.b
+		ai_chance = { factor = 25}
+		
+		add_stability = -0.05
+	}
+}
+
+#Death of Al Smith
+country_event = {
+	id = tlusa.3
+	title = tlusa.3.title
+	desc = tlusa.3.desc
+	picture = GFX_report_event_usa_election_generic
+	
+	is_triggered_only = yes
+	
+		option = {
+			name = tlusa.3.a
+			ai_chance = { factor = 90}
+		
+			retire_country_leader = yes
+		
+			create_country_leader = {
+				name = "Charles La Follette"
+				desc = "POLITICS_CHARLES_FOLLETTE_DESC"
+				picture = "Portrait_USA_Charles_Follette.dds"
+				expire = "1965.1.1"
+				ideology = progressivism 
+				traits = { 
+				}
+			}
+		
+		}
+}

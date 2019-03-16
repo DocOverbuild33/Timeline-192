@@ -1,0 +1,1296 @@
+focus_tree = { 
+id = tl_CSA_focus
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = CSA
+} 
+} 
+#Focus for Automobile Subsidies
+focus = { 
+id = CSA_automobilesubsidies
+icon = GFX_goal_generic_army_motorized
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_confederatehighways } 
+
+ } 
+
+#Focus for Rural Electrification
+focus = { 
+id = CSA_ruralelectrification
+icon = GFX_goal_generic_construct_civ_factory
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reliefcamps } 
+
+ } 
+
+#Focus for Cropdusting Fleet
+focus = { 
+id = CSA_cropdustingfleet
+icon = GFX_goal_generic_air_fighter2
+x = 5
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_mechanizedagriculture } 
+
+ } 
+
+#Focus for Radios in Every House
+focus = { 
+id = CSA_radiosineveryhouse
+icon = GFX_goal_generic_propaganda
+x = 7
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reliefcamps } 
+
+ } 
+
+#Focus for Red Mountain Mining
+focus = { 
+id = CSA_redmountainmining
+icon = GFX_focus_generic_steel
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_braceroprogram } 
+
+ } 
+
+#Focus for The New South
+focus = { 
+id = CSA_thenewsouth
+icon = GFX_goal_continuous_armor_production
+x = 5
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_publicworks } 
+prerequisite = { focus = CSA_cropdustingfleet } 
+prerequisite = { focus = CSA_petrochemicalinvestment } 
+
+ } 
+
+#Focus for Constant Air Support
+focus = { 
+id = CSA_constantairsupport
+icon = GFX_goal_generic_air_doctrine
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reformthecsaaf } 
+mutually_exclusive = { focus = CSA_airborneartillery } 
+
+ } 
+
+#Focus for Reform the CSAAF
+focus = { 
+id = CSA_reformthecsaaf
+icon = GFX_goal_generic_build_airforce
+x = 16
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thenextwar } 
+
+ } 
+
+#Focus for Expand Research Funding
+focus = { 
+id = CSA_expandresearchfunding
+icon = GFX_focus_research2
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_emoryradiationlabs } 
+
+ } 
+
+#Focus for The Lexington Project
+focus = { 
+id = CSA_thelexingtonproject
+icon = GFX_focus_wonderweapons
+x = 10
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_expandresearchfunding } 
+
+ } 
+
+#Focus for Huntsville Rocket Society
+focus = { 
+id = CSA_huntsvillerocketsociety
+icon = GFX_focus_rocketry
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_expandresearchfunding } 
+
+ } 
+
+#Focus for Emory Radiation Labs
+focus = { 
+id = CSA_emoryradiationlabs
+icon = GFX_focus_generic_cryptologic_bomb
+x = 11
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_arlingtonhall } 
+prerequisite = { focus = CSA_navalcomputersdivision } 
+
+ } 
+
+#Focus for Enlarge the Merchant Marine
+focus = { 
+id = CSA_enlargethemerchantmarine
+icon = GFX_goal_generic_occupy_states_coastal
+x = 33
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_expandthedockyards } 
+
+ } 
+
+#Focus for The Next War
+focus = { 
+id = CSA_thenextwar
+icon = GFX_goal_generic_small_arms
+x = 24
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Airborne Artillery
+focus = { 
+id = CSA_airborneartillery
+icon = GFX_goal_generic_CAS
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reformthecsaaf } 
+mutually_exclusive = { focus = CSA_constantairsupport } 
+
+ } 
+
+#Focus for Fighter Designs
+focus = { 
+id = CSA_fighterdesigns
+icon = GFX_goal_generic_air_fighter2
+x = 17
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_constantairsupport } 
+
+ } 
+
+#Focus for Air Defense Corps
+focus = { 
+id = CSA_airdefensecorps
+icon = GFX_focus_generic_air_defense
+x = 17
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_fighterdesigns focus = CSA_divebomberdesigns } 
+
+ } 
+
+#Focus for Turbojet Designs
+focus = { 
+id = CSA_turbojetdesigns
+icon = GFX_focus_rocketry
+x = 16
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_divebomberdesigns focus = CSA_fighterdesigns } 
+
+ } 
+
+#Focus for Strengthen the CSN
+focus = { 
+id = CSA_strengthenthecsn
+icon = GFX_goal_generic_build_navy
+x = 33
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thenextwar } 
+
+ } 
+
+#Focus for Contest the Blockade
+focus = { 
+id = CSA_contesttheblockade
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 31
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_strengthenthecsn } 
+mutually_exclusive = { focus = CSA_evadetheblockade } 
+
+ } 
+
+#Focus for Submarine Effort
+focus = { 
+id = CSA_submarineeffort
+icon = GFX_goal_generic_navy_anti_submarine
+x = 35
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_evadetheblockade } 
+
+ } 
+
+#Focus for Coyote Band Doctrine
+focus = { 
+id = CSA_coyotebanddoctrine
+icon = GFX_goal_generic_wolf_pack
+x = 35
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_submarineeffort } 
+
+ } 
+
+#Focus for Coastal Air Defence
+focus = { 
+id = CSA_coastalairdefence
+icon = GFX_goal_generic_air_naval_bomber
+x = 31
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_pocketbattleships } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_undefined
+icon = GFX_focus_generic_self_management
+x = 58
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_rFeKDxsc } 
+
+ } 
+
+#Focus for The Final Ultimatum
+focus = { 
+id = CSA_thefinalultimatum
+icon = GFX_goal_generic_major_war
+x = 48
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_fateoftheborderstates } 
+
+ } 
+
+#Focus for Improved Tredegars
+focus = { 
+id = CSA_improvedtredegars
+icon = GFX_goal_generic_allies_build_infantry
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_purgethearistocrats } 
+
+ } 
+
+#Focus for Thunder Runs
+focus = { 
+id = CSA_thunderruns
+icon = GFX_goal_generic_cavalry
+x = 22
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_armyrangers } 
+prerequisite = { focus = CSA_improvedtredegars } 
+mutually_exclusive = { focus = CSA_shockandawe } 
+
+ } 
+
+#Focus for Shock and Awe
+focus = { 
+id = CSA_shockandawe
+icon = GFX_goal_generic_army_artillery2
+x = 26
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_armyrangers } 
+prerequisite = { focus = CSA_improvedtredegars } 
+mutually_exclusive = { focus = CSA_thunderruns } 
+
+ } 
+
+#Focus for Influence in South America
+focus = { 
+id = CSA_influenceinsouthamerica
+icon = GFX_goal_generic_alliance
+x = 53
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_alliesinthetropics } 
+
+ } 
+
+#Focus for Artillery Innovations
+focus = { 
+id = CSA_artilleryinnovations
+icon = GFX_goal_generic_army_artillery2
+x = 26
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_shockandawe } 
+
+ } 
+
+#Focus for Purge the Aristocrats
+focus = { 
+id = CSA_purgethearistocrats
+icon = GFX_focus_rom_abdicate
+x = 24
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thenextwar } 
+
+ } 
+
+#Focus for War Economy
+focus = { 
+id = CSA_wareconomy
+icon = GFX_goal_generic_construct_mil_factory
+x = 26
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_rolloutthebarrels } 
+
+ } 
+
+#Focus for CSA Rocket Battalions
+focus = { 
+id = CSA_csarocketbattalions
+icon = GFX_goal_generic_occupy_start_war
+x = 28
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_shockandawe } 
+
+ } 
+
+#Focus for Demand Plebiscites
+focus = { 
+id = CSA_demandplebiscites
+icon = GFX_goal_generic_dangerous_deal
+x = 48
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_assertourclaims } 
+
+ } 
+
+#Focus for Featherston and Freedom
+focus = { 
+id = CSA_featherstonandfreedom
+icon = GFX_focus_usa_voter_registration_act
+x = 40
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_rFeKDxsc
+icon = GFX_goal_generic_defence
+x = 58
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Repeal the Seven Words
+focus = { 
+id = CSA_repealthesevenwords
+icon = GFX_goal_generic_forceful_treaty
+x = 40
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_consolidatelouisiania } 
+
+ } 
+
+#Focus for Half-track Production
+focus = { 
+id = CSA_halftrackproduction
+icon = GFX_goal_continuous_repairments
+x = 22
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_integratedpioneers } 
+prerequisite = { focus = CSA_lightninginfantry } 
+
+ } 
+
+#Focus for Sponsor Gran Columbia
+focus = { 
+id = CSA_sponsorgrancolumbia
+icon = GFX_goal_generic_forceful_treaty
+x = 53
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_influenceinsouthamerica } 
+
+ } 
+
+#Focus for Maneuvers with the French
+focus = { 
+id = CSA_maneuverswiththefrench
+icon = GFX_focus_generic_license_production
+x = 48
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_ententeresearchties } 
+
+ } 
+
+#Focus for The Golden Circle
+focus = { 
+id = CSA_thegoldencircle
+icon = GFX_goal_generic_attack_allies
+x = 53
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = CSA_reaffirmententecommitment } 
+
+ } 
+
+#Focus for Entente Research Ties
+focus = { 
+id = CSA_ententeresearchties
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 48
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reaffirmententecommitment } 
+
+ } 
+
+#Focus for South American Investment
+focus = { 
+id = CSA_southamericaninvestment
+icon = GFX_goal_generic_construct_civ_factory
+x = 53
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_sponsorgrancolumbia } 
+
+ } 
+
+#Focus for Confederate Nationalism
+focus = { 
+id = CSA_confederatenationalism
+icon = GFX_goal_support_fascism
+x = 38
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_featherstonandfreedom } 
+
+ } 
+
+#Focus for Restore Democracy
+focus = { 
+id = CSA_restoredemocracy
+icon = GFX_goal_support_democracy
+x = 62
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_ufvptACY
+icon = GFX_goal_generic_neutrality_focus
+x = 58
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_puwrOKVv } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_puwrOKVv
+icon = GFX_goal_generic_positive_trade_relations
+x = 58
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_bCOBgzya } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_bfsPqdyr
+icon = GFX_focus_generic_military_mission
+x = 58
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_undefined } 
+
+ } 
+
+#Focus for Flying with Europe
+focus = { 
+id = CSA_flyingwitheurope
+icon = GFX_goal_generic_air_fighter2
+x = 50
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_ententeresearchties } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_IXpJcbQe
+icon = GFX_focus_generic_home_defense
+x = 62
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_dTkLBlNP } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_dTkLBlNP
+icon = GFX_focus_generic_little_entente
+x = 62
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_togetherforvictory } 
+
+ } 
+
+#Focus for Public Works
+focus = { 
+id = CSA_publicworks
+icon = GFX_goal_generic_construction2
+x = 3
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_redmountainmining } 
+
+ } 
+
+#Focus for Advanced Barrel Designs
+focus = { 
+id = CSA_advancedbarreldesigns
+icon = GFX_goal_generic_army_tanks
+x = 24
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_rolloutthebarrels } 
+
+ } 
+
+#Focus for National Assault Force
+focus = { 
+id = CSA_nationalassaultforce
+icon = GFX_focus_prc_infiltration
+x = 40
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_paylipservicetostatesrights } 
+
+ } 
+
+#Focus for Confederate Highways
+focus = { 
+id = CSA_confederatehighways
+icon = GFX_goal_generic_construct_civilian
+x = 5
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reliefcamps } 
+
+ } 
+
+#Focus for Gulf Oil Boom
+focus = { 
+id = CSA_gulfoilboom
+icon = GFX_goal_generic_oil_refinery
+x = 7
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_guidedcapitalism } 
+
+ } 
+
+#Focus for Central American Investment
+focus = { 
+id = CSA_centralamericaninvestment
+icon = GFX_goal_generic_construct_civ_factory
+x = 55
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_supportcentralamericanreunification } 
+
+ } 
+
+#Focus for Petrochemical Investment
+focus = { 
+id = CSA_petrochemicalinvestment
+icon = GFX_goal_generic_construct_civ_factory
+x = 7
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_gulfoilboom } 
+
+ } 
+
+#Focus for Bracero Program
+focus = { 
+id = CSA_braceroprogram
+icon = GFX_goal_generic_production
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_ruralelectrification } 
+
+ } 
+
+#Focus for Naval Computers Division
+focus = { 
+id = CSA_navalcomputersdivision
+icon = GFX_goal_continuous_naval_production
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_theresearchcouncil } 
+
+ } 
+
+#Focus for Arlington Hall
+focus = { 
+id = CSA_arlingtonhall
+icon = GFX_goal_generic_radar
+x = 10
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_theresearchcouncil } 
+
+ } 
+
+#Focus for The Research Council
+focus = { 
+id = CSA_theresearchcouncil
+icon = GFX_goal_generic_scientific_exchange
+x = 11
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Evade the Blockade
+focus = { 
+id = CSA_evadetheblockade
+icon = GFX_goal_generic_navy_submarine
+x = 35
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_strengthenthecsn } 
+mutually_exclusive = { focus = CSA_contesttheblockade } 
+
+ } 
+
+#Focus for Expand the Dockyards
+focus = { 
+id = CSA_expandthedockyards
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 33
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_strengthenthecsn } 
+
+ } 
+
+#Focus for CS Marine Corps
+focus = { 
+id = CSA_csmarinecorps
+icon = GFX_goal_generic_amphibious_assault
+x = 33
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_enlargethemerchantmarine } 
+
+ } 
+
+#Focus for Dive Bomber Designs
+focus = { 
+id = CSA_divebomberdesigns
+icon = GFX_goal_poland_goal
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_airborneartillery } 
+
+ } 
+
+#Focus for Assert our Claims
+focus = { 
+id = CSA_assertourclaims
+icon = GFX_goal_generic_territory_or_war
+x = 48
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_renouncemilitaryrestrictions } 
+
+ } 
+
+#Focus for Freedom Guards
+focus = { 
+id = CSA_freedomguards
+icon = GFX_focus_generic_military_mission
+x = 41
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_repealthesevenwords } 
+
+ } 
+
+#Focus for Pocket Battleships
+focus = { 
+id = CSA_pocketbattleships
+icon = GFX_goal_generic_navy_battleship
+x = 31
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_contesttheblockade } 
+
+ } 
+
+#Focus for Experience from Mexico
+focus = { 
+id = CSA_experiencefrommexico
+icon = GFX_goal_generic_army_tanks
+x = 24
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_shockandawe focus = CSA_thunderruns } 
+
+ } 
+
+#Focus for Lightning Infantry
+focus = { 
+id = CSA_lightninginfantry
+icon = GFX_goal_generic_army_motorized
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thunderruns } 
+
+ } 
+
+#Focus for Integrated Pioneers
+focus = { 
+id = CSA_integratedpioneers
+icon = GFX_goal_generic_production
+x = 20
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thunderruns } 
+
+ } 
+
+#Focus for Large Ordnance Manufactories
+focus = { 
+id = CSA_largeordnancemanufactories
+icon = GFX_goal_generic_army_artillery2
+x = 26
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_artilleryinnovations } 
+prerequisite = { focus = CSA_csarocketbattalions } 
+
+ } 
+
+#Focus for Roll Out the Barrels
+focus = { 
+id = CSA_rolloutthebarrels
+icon = GFX_goal_continuous_armor_production
+x = 24
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_experiencefrommexico } 
+
+ } 
+
+#Focus for Sailing with the Royal Navy
+focus = { 
+id = CSA_sailingwiththeroyalnavy
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 46
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_ententeresearchties } 
+
+ } 
+
+#Focus for Helljumpers
+focus = { 
+id = CSA_helljumpers
+icon = GFX_focus_generic_paratrooper
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_divebomberdesigns focus = CSA_fighterdesigns } 
+
+ } 
+
+#Focus for Support Central American Reunification
+focus = { 
+id = CSA_supportcentralamericanreunification
+icon = GFX_focus_generic_treaty
+x = 55
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_alliesinthetropics } 
+
+ } 
+
+#Focus for Clandestine Canadian Support
+focus = { 
+id = CSA_clandestinecanadiansupport
+icon = GFX_goal_generic_small_arms
+x = 45
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_reaffirmententecommitment } 
+
+ } 
+
+#Focus for Allies in the Tropics
+focus = { 
+id = CSA_alliesinthetropics
+icon = GFX_goal_tripartite_pact
+x = 53
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thegoldencircle } 
+
+ } 
+
+#Focus for Reaffirm Entente Commitment
+focus = { 
+id = CSA_reaffirmententecommitment
+icon = GFX_goal_anschluss
+x = 47
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = CSA_thegoldencircle } 
+
+ } 
+
+#Focus for Freedom Youth Corps
+focus = { 
+id = CSA_freedomyouthcorps
+icon = GFX_focus_generic_military_academy
+x = 42
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_featherstonandfreedom } 
+
+ } 
+
+#Focus for Deal with Huey Long
+focus = { 
+id = CSA_dealwithhueylong
+icon = GFX_goal_continuous_suppression
+x = 40
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_featherstonandfreedom } 
+prerequisite = { focus = CSA_freedomyouthcorps } 
+prerequisite = { focus = CSA_confederatenationalism } 
+
+ } 
+
+#Focus for Purge the Stalwarts
+focus = { 
+id = CSA_purgethestalwarts
+icon = GFX_goal_generic_secret_weapon
+x = 39
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_repealthesevenwords } 
+
+ } 
+
+#Focus for Consolidate Louisiania
+focus = { 
+id = CSA_consolidatelouisiania
+icon = GFX_goal_generic_political_pressure
+x = 40
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_dealwithhueylong } 
+
+ } 
+
+#Focus for Army Rangers
+focus = { 
+id = CSA_armyrangers
+icon = GFX_goal_generic_special_forces
+x = 25
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_purgethearistocrats } 
+
+ } 
+
+#Focus for The Stove Pipe
+focus = { 
+id = CSA_thestovepipe
+icon = GFX_goal_poland_goal
+x = 22
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_rolloutthebarrels } 
+
+ } 
+
+#Focus for Relief Camps
+focus = { 
+id = CSA_reliefcamps
+icon = GFX_goal_generic_construction2
+x = 5
+y = 0
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Mechanized Agriculture
+focus = { 
+id = CSA_mechanizedagriculture
+icon = GFX_focus_NZL_bob_semple_tank
+x = 5
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_automobilesubsidies } 
+
+ } 
+
+#Focus for Guided Capitalism
+focus = { 
+id = CSA_guidedcapitalism
+icon = GFX_goal_generic_intelligence_exchange
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_radiosineveryhouse } 
+
+ } 
+
+#Focus for undefined
+focus = { 
+id = CSA_bCOBgzya
+icon = GFX_goal_tripartite_pact
+x = 58
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_bfsPqdyr } 
+
+ } 
+
+#Focus for Fate of the Border States
+focus = { 
+id = CSA_fateoftheborderstates
+icon = GFX_focus_generic_provoke_border_clashes
+x = 48
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_demandplebiscites } 
+
+ } 
+
+#Focus for Mobilize the People
+focus = { 
+id = CSA_mobilizethepeople
+icon = GFX_focus_generic_little_entente
+x = 43
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_dealwithhueylong } 
+
+ } 
+
+#Focus for Together for Victory
+focus = { 
+id = CSA_togetherforvictory
+icon = GFX_goal_generic_national_unity
+x = 62
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_unitethenation } 
+
+ } 
+
+#Focus for Unite the Nation
+focus = { 
+id = CSA_unitethenation
+icon = GFX_goal_generic_propaganda
+x = 62
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_defreedomization } 
+
+ } 
+
+#Focus for Defreedomization
+focus = { 
+id = CSA_defreedomization
+icon = GFX_focus_generic_anti_fascist_diplomacy
+x = 62
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_restoredemocracy } 
+
+ } 
+
+#Focus for Renounce Military Restrictions
+focus = { 
+id = CSA_renouncemilitaryrestrictions
+icon = GFX_focus_generic_military_mission
+x = 48
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_sailingwiththeroyalnavy focus = CSA_maneuverswiththefrench focus = CSA_flyingwitheurope } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dissolve the Redemption League
+focus = { 
+id = CSA_dissolvetheredemptionleague
+icon = GFX_focus_hol_war_on_pacifism
+x = 40
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_purgethestalwarts } 
+prerequisite = { focus = CSA_freedomguards } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Children Are Our Future
+focus = { 
+id = CSA_thechildrenareourfuture
+icon = GFX_goal_tfv_generic_tech_sharing
+x = 43
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_mobilizethepeople } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Pay Lip Service to State's Rights
+focus = { 
+id = CSA_paylipservicetostatesrights
+icon = GFX_focus_mex_triumph_over_the_cristeros
+x = 40
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_dissolvetheredemptionleague } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Dissent is Treason
+focus = { 
+id = CSA_dissentistreason
+icon = GFX_goal_generic_propaganda
+x = 43
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_thechildrenareourfuture } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Buy Puerto Rico
+focus = { 
+id = CSA_buypuertorico
+icon = GFX_focus_mex_caudillo_private_armies
+x = 51
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_securethecaribbean } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Secure the Caribbean
+focus = { 
+id = CSA_securethecaribbean
+icon = GFX_focus_usa_honor_the_confederacy
+x = 51
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_renouncemilitaryrestrictions } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Dominican Problem
+focus = { 
+id = CSA_thedominicanproblem
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 51
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_endhaitianindependence } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for End Haitian Independence
+focus = { 
+id = CSA_endhaitianindependence
+icon = GFX_focus_renounce_the_treaty_of_trianon
+x = 51
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CSA_buypuertorico } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

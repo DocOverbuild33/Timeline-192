@@ -1,0 +1,44 @@
+
+state={
+	id=789
+	name="STATE_789"
+	manpower = 1054300
+
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			1915 5
+
+		}
+		victory_points = {
+			12301 15
+
+		}
+		victory_points = {
+			1998 3
+
+		}
+		victory_points = {
+			12893 5
+
+		}
+		add_core_of = USA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+
+	}
+
+	provinces={
+	4955 8064 12875 1915 5085 3875 1998 12301 9773 12848 12893 3972 9908 2055
+	}
+}

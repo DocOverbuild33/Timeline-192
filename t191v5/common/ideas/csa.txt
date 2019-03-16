@@ -1,0 +1,64 @@
+ideas = {
+
+	country = {
+		CSA_blue-blooded_general_staff = {
+			picture = CZE_planning_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.2
+				planning_speed = -0.10
+				max_planning = 0.20
+				army_speed_factor = -0.05
+			}
+		}
+		
+		CSA_dual_power_sharing = {
+			picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.20
+				political_advisor_cost_factor = 0.25
+			}
+		}
+		
+		CSA_louisiana_problem = {
+			picture = generic_secret_police
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.1
+			}
+		}
+				
+	}
+	

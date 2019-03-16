@@ -1,0 +1,28 @@
+
+state={
+	id=798
+	name="STATE_798"
+	manpower = 100000
+	
+	state_category = town
+	
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = USA
+		victory_points = {
+			4625 10
+		}
+		victory_points = {
+			4567 10
+		}
+
+	}
+
+	provinces={
+		4597 4625 7586 4567 10477
+	}
+}

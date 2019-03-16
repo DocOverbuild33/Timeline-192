@@ -1,0 +1,14 @@
+focus_tree = { 
+	id = GEO
+	
+	country = { 
+		factor = 0
+		
+		modifier = { 
+			add = 10 
+			tag = GEO 
+		} 
+	} 
+	
+	default = no
+}
